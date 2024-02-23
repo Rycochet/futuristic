@@ -1,0 +1,14 @@
+/*
+ * SPDX-FileCopyrightText: 2024 Ryc O'Chet <rycochet@rycochet.com>
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+.base {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+}

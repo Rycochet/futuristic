@@ -1,0 +1,75 @@
+{
+  "name": "futuristic",
+  "author": "Ryc O'Chet <rycochet@rycochet.com>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "LZ-based compression algorithm",
+  "homepage": "https://github.com/Rycochet/futuristic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rycochet/futuristic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rycochet/futuristic/issues"
+  },
+  "keywords": [
+    "larp",
+    "sci-fi",
+    "future"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "format": "npm run format:prettier && npm run format:eslint",
+    "format:prettier": "prettier --write .",
+    "format:eslint": "eslint --fix .",
+    "start": "vite",
+    "test": "vitest",
+    "test:bench": "vitest bench",
+    "test:ui": "vitest --coverage --ui",
+    "test:coverage": "vitest run --coverage",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "lint:prettier": "prettier --check .",
+    "lint:eslint": "eslint ."
+  },
+  "devDependencies": {
+    "@btmills/prettier": "3.2.4",
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@microsoft/eslint-formatter-sarif": "3.0.0",
+    "@types/node": "20.11.18",
+    "@types/react": "~18.2.57",
+    "@types/react-dom": "~18.2.19",
+    "@typescript-eslint/eslint-plugin": "7.0.1",
+    "@typescript-eslint/parser": "7.0.1",
+    "@vitejs/plugin-react": "4.2.1",
+    "@vitest/coverage-v8": "1.2.2",
+    "@vitest/ui": "1.2.2",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "9.1.0",
+    "lightningcss": "1.23.0",
+    "tslib": "2.6.2",
+    "typescript": "5.3.3",
+    "vite": "5.1.2",
+    "vite-plugin-eslint": "1.8.1",
+    "vite-tsconfig-paths": "4.3.1",
+    "vitest": "1.2.2"
+  },
+  "override": {
+    "prettier": "npm:@btmills/prettier@3.1.0",
+    "rollup": "npm:@rollup/wasm-node"
+  },
+  "dependencies": {
+    "@emotion/react": "11.11.3",
+    "@emotion/styled": "11.11.0",
+    "@mui/icons-material": "5.15.10",
+    "@mui/material": "5.15.10",
+    "@mui/x-charts": "6.19.4",
+    "@react-hookz/web": "24.0.4",
+    "date-fns": "3.3.1",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0",
+    "react-globe.gl": "~2.27.2"
+  }
+}

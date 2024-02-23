@@ -1,0 +1,16 @@
+# Created folders
+bin
+coverage
+dist
+junit-reports
+node_modules
+
+# If npm fails
+npm-debug.log*
+
+# Editors, should be in a global .gitignore
+.idea
+.vscode
+
+# Testing files
+*.tmp

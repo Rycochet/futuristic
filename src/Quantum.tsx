@@ -22,7 +22,6 @@ export const Quantum: FunctionComponent = () => {
     const [data, setData] = useState<number[][]>([...Array(LINE_COUNT).keys()].map(() => makeData()));
     const [xData] = useState<number[]>([...Array(POINT_COUNT).keys()]);
 
-    console.log({ data });
     trendRef.current = trend;
 
     useResizeObserver(sizeRef, (size) => setWidth(size.target.parentElement!.clientWidth - 32));
@@ -47,11 +46,6 @@ export const Quantum: FunctionComponent = () => {
         });
     }, 100);
 
-    console.log(
-        [...Array(LINE_COUNT).keys()].map((i) => ({
-            color: `#${Math.min(15, Math.floor((LINE_COUNT / (LINE_COUNT - i)) * 15)).toString(16)}${Math.min(15, Math.floor((LINE_COUNT / (LINE_COUNT - i)) * 15)).toString(16)}0`,
-        })),
-    );
     // { type: "line", data: data[9], color: "#f00" },
     // { type: "line", data: data[8], color: "#f60" },
     // { type: "line", data: data[7], color: "#fb0" },
